@@ -9,27 +9,33 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: #452b2b;
+    overflow:hidden ;
+    
+}
+.container{
+    width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
 }
 
 .box{
-    width: 380px;
-    height: 100%;
-    margin: 200px ;
+    width:100%;
     background-color: #fff;
+    border-radius: 10px;
+
+    
     
 }
 
 .box .box-header{
     line-height: 90px;
-    background-color:lightblue;
-    width: 100%;
-    padding: 0 150px;
+    background-color:red;
+    text-align: center;
     color: #fff;
+    font-size: 25px;
     font-weight: 500;
-    font-size: 15px;
-    border: 1px solid ;
-    border-radius: 0 0 10px 10px;
+    border-radius: 5px 5px 0 0;
 
 }
 
@@ -37,38 +43,67 @@ body{
     padding: 35px 25px 25px 25px;
 }
 
-form .box-row input{
-    width: 300px;
-    height: 30px;
-    position: relative;
+.box .box-row{
+    height: 40px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 0 0 0 10px;
-}
-
-
-.pass a{
-    text-decoration: none;
-    padding: 0 0 0 5px;
+    position: relative;
     
 }
-.button button{
-    width: 300px;
-    height: 30px;
-    margin: 5px 5px 0 10px;
-    background-color: lightblue;
+
+
+
+form .box-row input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+form .box-row input:focus{
+    outline: outset blue;
+}
+
+form .box-row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+}
+
+
+form .pass{
+    margin: -8px 0 20px 0;
+}
+.pass a{
+    color: black;
+    text-decoration: none;
+        
+}
+    .button button{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 5px;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 button:hover{
-    background-color: blue;
+    background-color: tomato;
     transition: 0.5s ease in;
 }
 .bottom{
-    display: flex;
-    padding: 0 0 25px 80px;
+    text-align: center;
+    margin-top: 20px;
+    
     
 }
 .bottom a{
